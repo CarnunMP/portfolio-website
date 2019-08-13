@@ -1268,7 +1268,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.325s ease-in-out;
 			transition: opacity 0.325s ease-in-out;
 			position: relative;
-			margin-top: 3.5rem;
+			margin-top: 0; /* Edited. Was: 3.5rem */
 		}
 
 			#header > *:before {
@@ -1277,7 +1277,7 @@ input, select, textarea {
 				position: absolute;
 				top: calc(-3.5rem - 1px);
 				left: calc(50% - 1px);
-				width: 1px;
+				/* width: 1px; */
 				height: calc(3.5rem + 1px);
 				background: #ffffff;
 			}
@@ -1292,9 +1292,9 @@ input, select, textarea {
 
 		#header .logo {
 			width: 5.5rem;
-			height: 5.5rem;
+			height: 0rem; /* Edited. Was: 5.5rem */
 			line-height: 5.5rem;
-			border: solid 1px #ffffff;
+			/* border: solid 1px #ffffff; */
 			border-radius: 100%;
 		}
 
@@ -1308,6 +1308,10 @@ input, select, textarea {
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 			max-width: 100%;
+
+			/* Added: */
+			margin: 5rem;
+			border-radius: 4px;
 		}
 
 			#header .content .inner {
@@ -1326,6 +1330,15 @@ input, select, textarea {
 
 				#header .content .inner > :last-child {
 					margin-bottom: 0;
+				}
+
+				#header .content .inner h1 { /* Added */
+					margin-bottom: 4rem;
+				}
+
+				#header .content .inner p { /* Added */
+					line-height: 0.5rem;
+					font-size: 1rem;
 				}
 
 			#header .content p {
@@ -1382,7 +1395,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			left: calc(50% - 1px);
-			width: 1px;
+			width: 0.5px; /* Edited. Was: 1px */
 			height: 100%;
 			background: #ffffff;
 		}
